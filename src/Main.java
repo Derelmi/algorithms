@@ -72,11 +72,11 @@ public class Main {
                                                 
                             ( 1 ) Heap Sort
                             ( 2 ) Merge Sort
-                            ( 3 ) Radix Sort
+                            ( 3 ) Selection Sort
                             ( 4 ) Quick Sort
                             ( 5 ) Bubble Sort
                             ( 6 ) Insertion Sort
-                            ( 7 ) Selection Sort
+                            ( 7 ) Radix Sort
                             """);
                     int sortOption = sc.nextInt();
                     switch (sortOption) {
@@ -106,7 +106,19 @@ public class Main {
                             System.out.println("Sorted Array in Ascending Order: ");
                             Sort.printMergeArray(data, data.length);
                         }
-                        case 3 -> System.out.println("Radix Sort!");
+                        case 3 -> {
+                            System.out.println("Selection Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+
+                            Sort.selectionSort(data);
+                            System.out.println("Sorted Array in Ascending Order: ");
+                            Sort.printSelectionArray(data);
+                        }
                         case 4 -> {
                             System.out.println("Quick Sort Test\n");
                             System.out.println("\nEnter 10 numbers separated with ONLY a space");
@@ -150,7 +162,9 @@ public class Main {
                             System.out.println("The elements after sorting: ");
                             System.out.println(Arrays.toString(nums));
                         }
-                        case 7 -> System.out.println("Selection Sort!");
+                        case 7 -> {
+
+                        }
                     }
                 }
                 default -> System.out.println("Enter a valid input");
