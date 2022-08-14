@@ -83,7 +83,21 @@ public class Main {
                         case 1 -> System.out.println("Heap Sort!");
                         case 2 -> System.out.println("Merge Sort!");
                         case 3 -> System.out.println("Radix Sort!");
-                        case 4 -> System.out.println("Quick Sort!");
+                        case 4 -> {
+                            System.out.println("Quick Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+
+                            Sort.quickSort(data, 0, data.length - 1);
+
+                            System.out.println("Sorted Array in Ascending Order ");
+                            Sort.printArray(data, data.length);
+
+                        }
                         case 5 -> System.out.println("Bubble Sort!");
                         case 6 -> {
                             System.out.println("Insertion Sort Test\n");
@@ -117,64 +131,5 @@ public class Main {
         System.out.println("Thanks for using this application!");
 
     }
-
-
-
-    
-        public static int partition(int array[], int low, int high) {
-            int pivot = array[high]; // choose rightmost as pivot
-            int i = (low-1);
-            //move through all elements and compare with pivot
-            for (int j = low; j < high; j++) {
-                if (array[j] <=pivot) {
-                    i++; //if element is smaller than pivot, swap with larger element
-
-                    int tmp = array[i];
-                    array[i] = array[j];
-                    array[j] = temp;
-                }
-            }
-            
-            int temp = array[i + 1]; // swap the pivot element with larger element specified by i
-            array[i + 1] = array[high];
-            array[high] = temp;
-            
-            return (i + 1);
-        }
-
-
-        static void quickSort(int array[], int low, int high) {
-            if (low < high) {
-                // find pivot element such that elements smaller than pivot are on the left
-                //  and elements greater than pivot are on the right
-                
-                int p = partition(array, low, high); // recursive call on the left of pivot
-                quickSort(array, low, p - 1);
-
-                quickSort(array, high, p + 1,); // recursive call on the right of pivot
-                 
-            }
-        }
-   
-
-class Main {
-  public static void main(String args[]) {
-
-    int[] data = { 7, 5, 2, 3, 0, 1, 6 };
-    System.out.println("Unsorted Array");
-    System.out.println(Arrays.toString(data));
-
-    int size = data.length;
-
-    // call quicksort() on array data
-    Quicksort.quickSort(data, 0, size - 1);
-
-    System.out.println("Sorted Array in Ascending Order ");
-    System.out.println(Arrays.toString(data));
-  }
-}
-
-
-    
 
 }
