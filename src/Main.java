@@ -98,7 +98,21 @@ public class Main {
                             Sort.printArray(data, data.length);
 
                         }
-                        case 5 -> System.out.println("Bubble Sort!");
+                        case 5 -> {
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] nums = new int[10];
+                            int i;
+                            // Loop to store input values in nums array
+                            for (i = 0; i < nums.length; i++) {
+                                nums[i] = sc.nextInt();
+                            }
+
+                            Sort.bubbleSort(nums, nums.length);
+                            System.out.println("The elements after sorting: ");
+                            for(i = 0; i < nums.length; ++i){
+                                System.out.print(nums[i] + " ");
+                            }
+                        }
                         case 6 -> {
                             System.out.println("Insertion Sort Test\n");
                             System.out.println("\nEnter 10 numbers separated with ONLY a space");
