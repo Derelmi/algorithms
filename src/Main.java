@@ -80,8 +80,22 @@ public class Main {
                             """);
                     int sortOption = sc.nextInt();
                     switch (sortOption) {
-                        case 1 -> System.out.println("Heap Sort!");
-                        case 2 -> System.out.println("Merge Sort!");
+                        case 1 -> {
+                            System.out.println("Quick Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+
+                            Sort.heapSort(data, data.length);
+                            System.out.println("Sorted Array in Ascending Order: ");
+                            Sort.printArr(data, data.length);
+                        }
+                        case 2 -> {
+
+                        }
                         case 3 -> System.out.println("Radix Sort!");
                         case 4 -> {
                             System.out.println("Quick Sort Test\n");
@@ -99,7 +113,7 @@ public class Main {
 
                         }
                         case 5 -> {
-                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            System.out.println("Bubble Sort\nEnter 10 numbers separated with ONLY a space");
                             int[] nums = new int[10];
                             int i;
                             // Loop to store input values in nums array
@@ -133,7 +147,7 @@ public class Main {
             }
 
 
-            System.out.println("Press any key to continue or press q to quit");
+            System.out.println("\n\nPress any key to continue or press q to quit");
             String quit = sc.next();
 
             if (Objects.equals(quit, "q")) {
