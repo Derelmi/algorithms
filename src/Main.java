@@ -163,6 +163,15 @@ public class Main {
                             System.out.println(Arrays.toString(nums));
                         }
                         case 7 -> {
+                            System.out.println("Radix Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+                            Sort.radixSort(data, data.length);
+                            Sort.printRadixArray(data, data.length);
 
                         }
                     }
