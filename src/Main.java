@@ -81,7 +81,7 @@ public class Main {
                     int sortOption = sc.nextInt();
                     switch (sortOption) {
                         case 1 -> {
-                            System.out.println("Quick Sort Test\n");
+                            System.out.println("Heap Sort Test\n");
                             System.out.println("\nEnter 10 numbers separated with ONLY a space");
                             int[] data = new int[10];
                             int i;
@@ -94,7 +94,17 @@ public class Main {
                             Sort.printArr(data, data.length);
                         }
                         case 2 -> {
+                            System.out.println("Merge Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
 
+                            Sort.mergeSort(data, 0, data.length - 1);
+                            System.out.println("Sorted Array in Ascending Order: ");
+                            Sort.printMergeArray(data, data.length);
                         }
                         case 3 -> System.out.println("Radix Sort!");
                         case 4 -> {
