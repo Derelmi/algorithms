@@ -85,7 +85,19 @@ public class Main {
                         case 3 -> System.out.println("Radix Sort!");
                         case 4 -> System.out.println("Quick Sort!");
                         case 5 -> System.out.println("Bubble Sort!");
-                        case 6 -> System.out.println("Insertion Sort!");
+                        case 6 -> {
+                            System.out.println("Insertion Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] nums = new int[10];
+                            int i;
+                            // Loop to store input values in nums array
+                            for (i = 0; i < nums.length; i++) {
+                                nums[i] = sc.nextInt();
+                            }
+                            Sort.insertionSort(nums);
+                            System.out.println("The elements after sorting: ");
+                            System.out.println(Arrays.toString(nums));
+                        }
                         case 7 -> System.out.println("Selection Sort!");
                     }
                 }
