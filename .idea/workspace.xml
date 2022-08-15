@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="5b499962-a244-4bfe-9c79-7fe78dfa4e0a" name="Changes" comment="moved to switch case">
       <change afterPath="$PROJECT_DIR$/src/SelectionSort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="dbf783cc-333a-4ada-a9c7-8c063630812f" name="Changes" comment="update">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sort.java" afterDir="false" />
+>>>>>>> 81ccae7dd4b06433eea980667a475b589145ded9
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +71,7 @@
       <updated>1659941420974</updated>
       <workItem from="1659941422381" duration="6744000" />
       <workItem from="1660459446408" duration="675000" />
-      <workItem from="1660464108079" duration="3290000" />
+      <workItem from="1660464108079" duration="4206000" />
     </task>
     <task id="LOCAL-00001" summary="created application">
       <created>1659941457990</created>
@@ -130,7 +136,56 @@
       <option name="project" value="LOCAL" />
       <updated>1660467422086</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="moved to enhanced switch case">
+      <created>1660467537564</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660467537564</updated>
+    </task>
+    <task id="LOCAL-00011" summary="update">
+      <created>1660467738548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660467738548</updated>
+    </task>
+    <task id="LOCAL-00012" summary="corrected quicksort">
+      <created>1660508638687</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660508638687</updated>
+    </task>
+    <task id="LOCAL-00013" summary="corrected bubble sort">
+      <created>1660508843660</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660508843660</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update">
+      <created>1660510761779</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660510761779</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update">
+      <created>1660511662841</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660511662841</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update">
+      <created>1660512544678</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660512544678</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +212,10 @@
     <MESSAGE value="added search and sort classes" />
     <MESSAGE value="added moved search functions to search class" />
     <MESSAGE value="moved to switch case" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved to switch case" />
+    <MESSAGE value="moved to enhanced switch case" />
+    <MESSAGE value="corrected quicksort" />
+    <MESSAGE value="corrected bubble sort" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>

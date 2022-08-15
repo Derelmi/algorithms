@@ -72,20 +72,79 @@ public class Main {
                                                 
                             ( 1 ) Heap Sort
                             ( 2 ) Merge Sort
-                            ( 3 ) Radix Sort
+                            ( 3 ) Selection Sort
                             ( 4 ) Quick Sort
                             ( 5 ) Bubble Sort
                             ( 6 ) Insertion Sort
-                            ( 7 ) Selection Sort
+                            ( 7 ) Radix Sort
                             """);
                     int sortOption = sc.nextInt();
                     switch (sortOption) {
+<<<<<<< HEAD
                         case 1 -> System.out.println("Heap Sort!");
                         case 2 -> System.out.println("Merge Sort!");
                         case 3 -> System.out.println("Radix Sort!");
                         case 4 -> System.out.println("Quick Sort!");
                         case 5 -> {
                             System.out.println("\nEnter 10 numbers separated with ONLY a space");
+=======
+                        case 1 -> {
+                            System.out.println("Heap Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+
+                            Sort.heapSort(data, data.length);
+                            System.out.println("Sorted Array in Ascending Order: ");
+                            Sort.printArr(data, data.length);
+                        }
+                        case 2 -> {
+                            System.out.println("Merge Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+
+                            Sort.mergeSort(data, 0, data.length - 1);
+                            System.out.println("Sorted Array in Ascending Order: ");
+                            Sort.printMergeArray(data, data.length);
+                        }
+                        case 3 -> {
+                            System.out.println("Selection Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+
+                            Sort.selectionSort(data);
+                            System.out.println("Sorted Array in Ascending Order: ");
+                            Sort.printSelectionArray(data);
+                        }
+                        case 4 -> {
+                            System.out.println("Quick Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+
+                            Sort.quickSort(data, 0, data.length - 1);
+
+                            System.out.println("Sorted Array in Ascending Order ");
+                            Sort.printArray(data, data.length);
+
+                        }
+                        case 5 -> {
+                            System.out.println("Bubble Sort\nEnter 10 numbers separated with ONLY a space");
+>>>>>>> 81ccae7dd4b06433eea980667a475b589145ded9
                             int[] nums = new int[10];
                             int i;
                             // Loop to store input values in nums array
@@ -99,15 +158,43 @@ public class Main {
                                 System.out.print(nums[i] + " ");
                             }
                         }
+<<<<<<< HEAD
                         case 6 -> System.out.println("Insertion Sort!");
                         case 7 -> System.out.println("Selection Sort!");
+=======
+                        case 6 -> {
+                            System.out.println("Insertion Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] nums = new int[10];
+                            int i;
+                            // Loop to store input values in nums array
+                            for (i = 0; i < nums.length; i++) {
+                                nums[i] = sc.nextInt();
+                            }
+                            Sort.insertionSort(nums);
+                            System.out.println("The elements after sorting: ");
+                            System.out.println(Arrays.toString(nums));
+                        }
+                        case 7 -> {
+                            System.out.println("Radix Sort Test\n");
+                            System.out.println("\nEnter 10 numbers separated with ONLY a space");
+                            int[] data = new int[10];
+                            int i;
+                            for (i = 0; i < data.length; i++) {
+                                data[i] = sc.nextInt();
+                            }
+                            Sort.radixSort(data, data.length);
+                            Sort.printRadixArray(data, data.length);
+
+                        }
+>>>>>>> 81ccae7dd4b06433eea980667a475b589145ded9
                     }
                 }
                 default -> System.out.println("Enter a valid input");
             }
 
 
-            System.out.println("Press any key to continue or press q to quit");
+            System.out.println("\n\nPress any key to continue or press q to quit");
             String quit = sc.next();
 
             if (Objects.equals(quit, "q")) {
@@ -119,4 +206,5 @@ public class Main {
         System.out.println("Thanks for using this application!");
 
     }
+
 }
